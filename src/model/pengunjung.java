@@ -22,7 +22,8 @@ public class pengunjung {
 
     // constructor
 
-    public pengunjung(String nama, int MPWP, int PKP, String no_kwitansi, String no_reff, String no_pol, String type_motor, String mekanis, int diskon, int harga, int qty, int item, int pajak) {
+    public pengunjung(String nama, int MPWP, int PKP, String no_kwitansi, String no_reff, String no_pol,
+                      String type_motor, String mekanis, int diskon, int harga, int qty, int item, int pajak) {
         this.nama = nama;
         this.MPWP = MPWP;
         this.PKP = PKP;
