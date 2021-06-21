@@ -76,6 +76,16 @@ public class member extends pengunjung {
         this.masa_berlaku = masa_berlaku;
     }
 
+    @Override
+    public boolean bayarpajak(int item) {
+        return super.bayarpajak(item);
+    }
+
+    @Override
+    public boolean bayarbonus(int item) {
+        return super.bayarbonus(item);
+    }
+
     // cetak data member
     void printmember() {
         System.out.println("nama   : " + this.getNama());
