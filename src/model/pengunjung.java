@@ -3,21 +3,21 @@ import java.text.DecimalFormat;
 import java.time.*;
 public class pengunjung {
     // atribut
-    String nama;
-    int MPWP;
-    int PKP;
-    String No_kwitansi;
-    String No_reff;
-    String No_pol;
-    String Type_motor;
-    String mekanis;
-    int diskon;
-    int harga;
-    int Qty;
-    int item;
-    int pajak;
-    String alamat;
-    int no_telp;
+    private String nama;
+    private int MPWP;
+    private int PKP;
+    private String No_kwitansi;
+    private String No_reff;
+    private String No_pol;
+    private String Type_motor;
+    private String mekanis;
+    private int diskon;
+    private int harga;
+    private int Qty;
+    private int item;
+    private int pajak;
+    private String alamat;
+    private String no_telp;
 
 
     // constructor
@@ -40,7 +40,7 @@ public class pengunjung {
     //construktor 2
 
 
-    public pengunjung(String alamat, int no_telp) {
+    public pengunjung(String alamat, String no_telp) {
         this.alamat = alamat;
         this.no_telp = no_telp;
     System.out.println("Alamat anda " + this.alamat);
@@ -80,6 +80,125 @@ public class pengunjung {
     return sum;
     }
 
+    public String getNama() {
+        return nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public int getMPWP() {
+        return MPWP;
+    }
+
+    public void setMPWP(int MPWP) {
+        this.MPWP = MPWP;
+    }
+
+    public int getPKP() {
+        return PKP;
+    }
+
+    public void setPKP(int PKP) {
+        this.PKP = PKP;
+    }
+
+    public String getNo_kwitansi() {
+        return No_kwitansi;
+    }
+
+    public void setNo_kwitansi(String no_kwitansi) {
+        No_kwitansi = no_kwitansi;
+    }
+
+    public String getNo_reff() {
+        return No_reff;
+    }
+
+    public void setNo_reff(String no_reff) {
+        No_reff = no_reff;
+    }
+
+    public String getNo_pol() {
+        return No_pol;
+    }
+
+    public void setNo_pol(String no_pol) {
+        No_pol = no_pol;
+    }
+
+    public String getType_motor() {
+        return Type_motor;
+    }
+
+    public void setType_motor(String type_motor) {
+        Type_motor = type_motor;
+    }
+
+    public String getMekanis() {
+        return mekanis;
+    }
+
+    public void setMekanis(String mekanis) {
+        this.mekanis = mekanis;
+    }
+
+    public int getDiskon() {
+        return diskon;
+    }
+
+    public void setDiskon(int diskon) {
+        this.diskon = diskon;
+    }
+
+    public int getHarga() {
+        return harga;
+    }
+
+    public void setHarga(int harga) {
+        this.harga = harga;
+    }
+
+    public int getQty() {
+        return Qty;
+    }
+
+    public void setQty(int qty) {
+        Qty = qty;
+    }
+
+    public int getItem() {
+        return item;
+    }
+
+    public void setItem(int item) {
+        this.item = item;
+    }
+
+    public int getPajak() {
+        return pajak;
+    }
+
+    public void setPajak(int pajak) {
+        this.pajak = pajak;
+    }
+
+    public String getAlamat() {
+        return alamat;
+    }
+
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
+    }
+
+    public String getNo_telp() {
+        return no_telp;
+    }
+
+    public void setNo_telp(String no_telp) {
+        this.no_telp = no_telp;
+    }
 
     // mencetak data pengunjung
     public void printPengunjung(){
