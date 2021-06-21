@@ -14,12 +14,15 @@ public class pengunjung {
     int diskon;
     int harga;
     int Qty;
-    long item;
+    int item;
     int pajak;
+    String alamat;
+    int no_telp;
+
 
     // constructor
 
-    public pengunjung(String nama, int MPWP, int PKP, String no_kwitansi, String no_reff, String no_pol, String type_motor, String mekanis, int diskon, int harga, int qty, long item, int pajak) {
+    public pengunjung(String nama, int MPWP, int PKP, String no_kwitansi, String no_reff, String no_pol, String type_motor, String mekanis, int diskon, int harga, int qty, int item, int pajak) {
         this.nama = nama;
         this.MPWP = MPWP;
         this.PKP = PKP;
@@ -34,11 +37,25 @@ public class pengunjung {
         this.item = item;
         this.pajak = pajak;
     }
+    //construktor 2
+
+
+    public pengunjung(String alamat, int no_telp) {
+        this.alamat = alamat;
+        this.no_telp = no_telp;
+    System.out.println("Alamat anda " + this.alamat);
+    System.out.println("No Telpon anda " + this.no_telp);
+
+    }
+    //construktor 3
+    public pengunjung() {
+        System.out.println("Terima Kasih atas Kepercayaan anda");
+    }
 
     // hitung diskon
-    long hitungdisko(){
+    long hitungdiskon(){
         long diskon = 0;
-            if (this.hitungdisko() >= 250000){
+            if (this.diskon >= 250000){
                 diskon = 30000;
             } else {
                 diskon = 0;
@@ -47,8 +64,9 @@ public class pengunjung {
     }
     //method hitung jumlah pengunjung
     public long hitung(){
-        long sum =(this.harga * this.Qty) * this.diskon;
-        return sum;
+        long a =this.harga * this.Qty;
+        long b = a * this.diskon;
+        return b;
     }
 
     //method total
@@ -64,7 +82,7 @@ public class pengunjung {
 
 
     // mencetak data pengunjung
-    void printPengunjung(){
+    public void printPengunjung(){
         System.out.println("nama   : " + this.nama);
         System.out.println("MPWP : " + this.MPWP);
         System.out.println("PKP     : " + this.PKP);
@@ -72,7 +90,7 @@ public class pengunjung {
         System.out.println("No reff   : " + this.No_reff);
         System.out.println("Type Motor   : " + this.Type_motor);
         System.out.println("Mekanis   : " + this.mekanis);
-        System.out.println("Hitung Diskon   : Rp " + this.hitungdisko());
+        System.out.println("Hitung Diskon   : Rp " + this.hitungdiskon());
         System.out.println("Hitung jumlah   : Rp " + this.hitung());
         System.out.println("Jumlah pajak   : Rp " + this.hitungpajak());
     }

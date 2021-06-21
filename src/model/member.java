@@ -7,14 +7,13 @@ public class member {
     String masa_berlaku;
 
     // constructor
+    public member(String nama, int MPWP, int PKP, String no_kwitansi, String no_reff, String no_pol, String type_motor, String mekanis, int diskon, int harga, int qty, int item, int pajak, String id_member, String no_member, String masa_berlaku){
+        super();
 
-
-    public member(String id_member, String no_member, String masa_berlaku) {
         this.id_member = id_member;
         this.No_member = no_member;
         this.masa_berlaku = masa_berlaku;
     }
-
     // menghitung member
     long hitungmember() {
         long member = 30000;
