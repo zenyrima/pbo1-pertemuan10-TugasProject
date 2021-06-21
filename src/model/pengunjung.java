@@ -18,26 +18,35 @@ public class pengunjung {
     private int pajak;
     private String alamat;
     private String no_telp;
-
+    int bonus;
+    int bayarbonus;
 
     // constructor
 
-    public pengunjung(String nama, int MPWP, int PKP, String no_kwitansi, String no_reff, String no_pol,
-                      String type_motor, String mekanis, int diskon, int harga, int qty, int item, int pajak) {
+    public pengunjung(String nama, int MPWP, int PKP, String no_kwitansi,
+                      String no_reff, String no_pol, String type_motor, String mekanis,
+                      int diskon, int harga, int qty, int item, int pajak, String alamat,
+                      String no_telp, int bonus, int bayarbonus) {
         this.nama = nama;
         this.MPWP = MPWP;
         this.PKP = PKP;
-        this.No_kwitansi = no_kwitansi;
-        this.No_reff = no_reff;
-        this.No_pol = no_pol;
-        this.Type_motor = type_motor;
+        No_kwitansi = no_kwitansi;
+        No_reff = no_reff;
+        No_pol = no_pol;
+        Type_motor = type_motor;
         this.mekanis = mekanis;
         this.diskon = diskon;
         this.harga = harga;
-        this.Qty = qty;
+        Qty = qty;
         this.item = item;
         this.pajak = pajak;
+        this.alamat = alamat;
+        this.no_telp = no_telp;
+        this.bonus = bonus;
+        this.bayarbonus = bayarbonus;
     }
+
+
     //construktor 2
 
 
@@ -79,6 +88,18 @@ public class pengunjung {
     public long hitungpajak(){
         long sum =this.item * 1000;
     return sum;
+    }
+    //method pajak
+    public boolean bayarpajak(int item){
+        String bayarpajak ="pajak Anda"+this.item * 1000;
+        System.out.println(bayarpajak);
+        return false;
+    }
+    //method bonus
+    public boolean bayarbonus(int item){
+        String bayarbonus ="bonus anda" + this.item * 20;
+        System.out.println(bayarbonus);
+        return false;
     }
 
     public String getNama() {
