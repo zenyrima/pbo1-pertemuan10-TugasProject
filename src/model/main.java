@@ -53,6 +53,8 @@ public class main {
         p2.setId_member("908");
         p2.setNo_member("9110");
         p2.setMasa_berlaku("s/d 2025");
+        p2.bayarpajak(1000);
+        p2.bayarbonus(20);
     p2.printmember();
 
     }
